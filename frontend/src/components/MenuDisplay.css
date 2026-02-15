@@ -1,0 +1,127 @@
+.menu-display {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-display h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.menu-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #999;
+  font-size: 16px;
+}
+
+.category-filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.category-btn.active {
+  background-color: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.menu-item {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item:hover {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 8px;
+}
+
+.menu-item h3 {
+  font-size: 14px;
+  margin: 0;
+  color: #333;
+  flex: 1;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #667eea;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.description {
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+  flex: 1;
+}
+
+.add-btn {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #5568d3;
+}
+
+.add-btn:active {
+  transform: scale(0.98);
+}
+
+.no-items {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+}

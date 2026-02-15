@@ -1,0 +1,267 @@
+.order-cart {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 15px;
+}
+
+.order-cart h2 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #999;
+  padding: 40px 10px;
+  margin: 0;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.item-info {
+  min-width: 0;
+}
+
+.item-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-price {
+  font-size: 12px;
+  color: #667eea;
+  margin-top: 2px;
+}
+
+.item-controls {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.qty-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #667eea;
+  padding: 0;
+  transition: background-color 0.2s;
+}
+
+.qty-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.qty-input {
+  width: 30px;
+  height: 24px;
+  border: none;
+  text-align: center;
+  font-size: 12px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.qty-input:focus {
+  outline: none;
+}
+
+.item-subtotal {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  min-width: 50px;
+  text-align: right;
+}
+
+.remove-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+  transition: background-color 0.2s;
+}
+
+.remove-btn:hover {
+  background-color: #ff5252;
+}
+
+.cart-summary {
+  border-top: 2px solid #e0e0e0;
+  padding-top: 12px;
+  font-size: 14px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.summary-row.total {
+  font-size: 16px;
+  font-weight: bold;
+  color: #667eea;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #5568d3;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.submit-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.cash-section {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #f9f9f9;
+}
+
+.cash-section label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.cash-input-group {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.cash-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.cash-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+}
+
+.match-btn {
+  padding: 8px 12px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.match-btn:hover {
+  background-color: #5568d3;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.match-btn:active {
+  transform: scale(0.95);
+}
+
+.change-display {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4caf50;
+  text-align: right;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #5568d3;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.submit-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}

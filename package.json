@@ -1,0 +1,27 @@
+{
+  "name": "ktlm-kitchen-pos",
+  "version": "1.0.0",
+  "description": "POS system for KTLM Kitchen Restaurant",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "npm run backend:dev & npm run frontend:dev",
+    "backend:dev": "cd backend && node server.js",
+    "frontend:dev": "cd frontend && npm start",
+    "backend:install": "cd backend && npm install",
+    "frontend:install": "cd frontend && npm install",
+    "install:all": "npm install && npm run backend:install && npm run frontend:install"
+  },
+  "keywords": [
+    "pos",
+    "restaurant",
+    "kitchen",
+    "order-management"
+  ],
+  "author": "KTLM",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite3": "^5.1.7",
+    "xlsx": "^0.18.5"
+  }
+}

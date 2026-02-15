@@ -1,0 +1,166 @@
+.confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.confirmation-modal {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.confirmation-modal h2 {
+  margin-top: 0;
+  color: #4caf50;
+  font-size: 24px;
+  text-align: center;
+}
+
+.order-number {
+  text-align: center;
+  font-size: 16px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.confirmation-items {
+  margin-bottom: 20px;
+}
+
+.confirmation-items h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.confirmation-item {
+  display: grid;
+  grid-template-columns: 1fr 50px 120px;
+  gap: 12px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  align-items: center;
+}
+
+.item-name {
+  font-weight: 600;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-qty {
+  text-align: center;
+  color: #666;
+}
+
+.item-price {
+  text-align: right;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.confirmation-summary {
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 16px 0;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.summary-row:last-child {
+  margin-bottom: 0;
+}
+
+.summary-row span:first-child {
+  color: #666;
+}
+
+.summary-row strong {
+  color: #333;
+  font-size: 16px;
+}
+
+.print-error {
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 16px;
+  color: #856404;
+  font-size: 13px;
+}
+
+.confirmation-buttons {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.print-btn,
+.close-btn {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.print-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.print-btn:hover:not(:disabled) {
+  background-color: #f57c00;
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+.print-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.close-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.close-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.print-btn:active,
+.close-btn:active {
+  transform: scale(0.98);
+}
