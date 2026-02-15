@@ -6,7 +6,7 @@ import OrderCart from './components/OrderCart';
 import OrderHistory from './components/OrderHistory';
 import OrderConfirmation from './components/OrderConfirmation';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 function App() {
   const [currentView, setCurrentView] = useState('pos');
